@@ -1,0 +1,75 @@
+#!/bin/bash
+
+#SBATCH --partition=bgmp        
+#SBATCH --job-name=SamtoolSort  
+#SBATCH --output=SamtoolSort.out
+#SBATCH --time=0-3:00:00       
+#SBATCH --nodes=1                    
+#SBATCH --account=bgmp      
+#SBATCH --cpus-per-task=12
+
+conda activate bgmp_py3
+
+
+ml easybuild  icc/2017.1.132-GCC-6.3.0-2.27  impi/2017.1.132
+ml SAMtools/1.8
+
+
+
+samFile="/projects/bgmp/apulvino/Bi624/Deduper/test.sam"
+outfile="/projects/bgmp/apulvino/Bi624/Deduper/test.sorted.sam"
+
+samtools view -S -b $samFile > test_out.bam
+# sam to bam
+samtools sort test_out.bam -o out_sorted.bam
+#send sorted output to new file
+samtools view -h out_sorted.bam > $outfile
+#send it to the final out by the outfile path (see variable above)
+
+
+D1samFile="/projects/bgmp/apulvino/Bi624/Deduper/Dataset1.sam"
+D1outfile="/projects/bgmp/apulvino/Bi624/Deduper/Dataset1.sorted.sam"
+
+samtools view -S -b $D1samFile > D1out.bam
+# sam to bam
+samtools sort D1out.bam -o D1out_sorted.bam
+#send sorted output to new file
+samtools view -h D1out_sorted.bam > $D1outfile
+#send it to the final out by the outfile path (see variable above)
+
+D2samFile="/projects/bgmp/apulvino/Bi624/Deduper/Dataset2.sam"
+D2outfile="/projects/bgmp/apulvino/Bi624/Deduper/Dataset2.sorted.sam"
+
+samtools view -S -b $D2samFile > D2out.bam
+# sam to bam
+samtools sort D2out.bam -o D2out_sorted.bam
+#send sorted output to new file
+samtools view -h D2out_sorted.bam > $D2outfile
+#send it to the final out by the outfile path (see variable above)
+
+D3samFile="/projects/bgmp/apulvino/Bi624/Deduper/Dataset3.sam"
+D3outfile="/projects/bgmp/apulvino/Bi624/Deduper/Dataset3.sorted.sam"
+
+samtools view -S -b $D3samFile > D3out.bam
+# sam to bam
+samtools sort D3out.bam -o D3out_sorted.bam
+#send sorted output to new file
+samtools view -h D3out_sorted.bam > $D3outfile
+#send it to the final out by the outfile path (see variable above)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
