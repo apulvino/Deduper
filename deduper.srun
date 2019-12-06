@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+#SBATCH --partition=bgmp        
+#SBATCH --job-name=deduper    
+#SBATCH --output=deduper.out
+#SBATCH --time=0-3:00:00       
+#SBATCH --nodes=1                    
+#SBATCH --account=bgmp      
+#SBATCH --cpus-per-task=12
+
+
+conda activate bgmp_py3
+
+
+#/usr/bin/time -v python deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/test.sorted.sam
+
+/usr/bin/time -v python pulvino_deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/Dataset1.sorted.sam -o Dataset1_ -u /projects/bgmp/apulvino/Bi624/Deduper/STL96.txt
+
+/usr/bin/time -v python pulvino_deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/Dataset2.sorted.sam -o Dataset2_ -u /projects/bgmp/apulvino/Bi624/Deduper/STL96.txt
+
+/usr/bin/time -v python pulvino_deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/Dataset3.sorted.sam -o Dataset3_ -u /projects/bgmp/apulvino/Bi624/Deduper/STL96.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
