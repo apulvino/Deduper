@@ -1,0 +1,75 @@
+Number of PCR duplicates: 369005
+Number of Unique Clones: 635985
+	Command being timed: "python pulvino_deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/Dataset1.sorted.sam -o Dataset1_ -u /projects/bgmp/apulvino/Bi624/Deduper/STL96.txt"
+	User time (seconds): 8.44
+	System time (seconds): 0.83
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 930040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 478912
+	Voluntary context switches: 264
+	Involuntary context switches: 18
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Number of PCR duplicates: 628602
+Number of Unique Clones: 744188
+	Command being timed: "python pulvino_deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/Dataset2.sorted.sam -o Dataset2_ -u /projects/bgmp/apulvino/Bi624/Deduper/STL96.txt"
+	User time (seconds): 11.30
+	System time (seconds): 0.92
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1100392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 566147
+	Voluntary context switches: 302
+	Involuntary context switches: 21
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Number of PCR duplicates: 1618532
+Number of Unique Clones: 4053679
+	Command being timed: "python pulvino_deduper.py -f /projects/bgmp/apulvino/Bi624/Deduper/Dataset3.sorted.sam -o Dataset3_ -u /projects/bgmp/apulvino/Bi624/Deduper/STL96.txt"
+	User time (seconds): 50.38
+	System time (seconds): 5.82
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5930100
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 6375095
+	Voluntary context switches: 904
+	Involuntary context switches: 86
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
